@@ -3,4 +3,26 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    button {
+        font-size: 2em;
+        background-color: white;
+        border-color: rgb(246, 160, 189);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        cursor: url('workbook/images/cursor.png'), auto;
+    }
+
+}
+
+
+h1 {
+    font-size: 15em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke: 5px rgb(246, 160, 189);
+    color: white;
+    text-align: center;
 }

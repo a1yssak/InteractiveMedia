@@ -1,76 +1,80 @@
 body {
     cursor: none;
-    /*background-image: url(images/another_background.png);
+    background-image: url(images/gradient.png);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    background-blend-mode: lighten;*/
+}
 
-    background-color: white;
+.button1 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
 
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    animation: orbit 10s linear infinite;
+}
+
+.button2 {
+    position: absolute;
+    top: 60%;
+    left: 70%;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    animation: orbit 10s linear infinite;
+}
+
+.button3 {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    animation: orbit 10s linear infinite;
 }
 
 .button1 {
     background-image: url('images/design_button.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    width: 400px;
-    height: 400px;
-
-    border: none;
-    background-color: transparent;
-
-    padding: 0;
-    cursor: none;
-
-    position: absolute;
-    top: 60%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+    animation-delay: -3s;
 }
 
 .button2 {
     background-image: url('images/other_button.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
     width: 350px;
     height: 350px;
-
-    border: none;
-    background-color: transparent;
-
-    padding: 0;
-    cursor: none;
-
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    animation-delay: -9s;
 }
 
 .button3 {
     background-image: url('images/design_button.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
     width: 350px;
     height: 350px;
-
-    border: none;
-    background-color: transparent;
-
-    padding: 0;
-    cursor: none;
-
-    position: absolute;
-    top: 30%;
-    left: 70%;
-    transform: translate(-30%, -30%);
+    animation-delay: 0s;
 }
+
+/* button animation */
+@keyframes orbit {
+    from {
+        transform: translate(-30%, -50%) rotate(0deg) translateX(50px);
+    }
+
+    to {
+        transform: translate(-30%, -50%) rotate(360deg) translateX(50px);
+    }
+}
+
 
 #custom-cursor {
     position: absolute;

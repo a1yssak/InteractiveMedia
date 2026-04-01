@@ -1,0 +1,103 @@
+body {
+    cursor: none;
+    background-image: url(images/research_background.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Annie Use Your Telescope';
+    color: palevioletred;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 40px;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+
+#week-one {
+    background-color: white;
+    width: 500px;
+    height: 1300px;
+    opacity: 80%;
+    margin: 20px;
+    border-radius: 35px;
+
+    img {
+        width: 250px;
+        height: 150px;
+        margin-left: 40px;
+    }
+}
+
+#week-two {
+    background-color: white;
+    width: 500px;
+    height: 1300px;
+    opacity: 80%;
+    margin: 20px;
+    border-radius: 35px;
+
+    img {
+        width: 350px;
+        height: 200px;
+        padding: 5px;
+        margin-left: 70px;
+    }
+}
+
+#week-three {
+    background-color: white;
+    width: 500px;
+    height: 1850px;
+    opacity: 80%;
+    margin: 20px;
+    border-radius: 35px;
+
+    img {
+        width: 250px;
+        height: 150px;
+        margin-left: 40px;
+        padding: 5px;
+    }
+}
+
+#week-four {
+    background-color: white;
+    width: 500px;
+    height: 1100px;
+    opacity: 80%;
+    margin: 20px;
+    border-radius: 35px;
+
+    img {
+        width: 250px;
+        height: 150px;
+        margin-left: 40px;
+    }
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#custom-cursor {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('images/cursor.png');
+    background-size: cover;
+    pointer-events: none;
+    transition: transform 0.1s ease-out;
+    pointer-events: none;
+}

@@ -90,7 +90,7 @@ p {
 #week-four {
     background-color: white;
     width: 500px;
-    height: 1100px;
+    height: 1300px;
     opacity: 80%;
     margin: 20px;
     border-radius: 35px;
@@ -205,5 +205,50 @@ p {
 
     100% {
         transform: translateY(0px);
+    }
+}
+
+/*DESIGN PRACTICE HTML*/
+.photos {
+    flex-direction: row;
+    gap: 20px;
+    padding: 100px;
+    justify-content: center;
+}
+
+.image {
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.learning {
+    background-color: white;
+    margin: 40px 100px;
+    padding: 20px 30px;
+    border-radius: 35px;
+    text-align: center;
+
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        margin-top: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 3em;
+        font-family: 'Annie Use Your Telescope';
+        color: palevioletred;
+        margin-bottom: 10px;
+        margin-top: 0;
     }
 }

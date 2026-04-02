@@ -5,3 +5,6 @@ document.addEventListener('mousemove', (e) => {
     customCursor.style.top = e.pageY + 'px';
 });
 
+function goBack() {
+    window.history.back();
+}

@@ -1,8 +1,7 @@
 body {
-    background-image: url(images/background123.gif);
+    background-image: url(images/gradient.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     cursor: none;
 }
 
@@ -12,8 +11,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
 
     border: none;
     background-color: transparent;
@@ -22,9 +21,40 @@ body {
     cursor: none;
 
     position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 30px;
+    left: 350px;
+    transform: none;
+
+    font-size: 1.5em;
+    font-family: 'Annie Use Your Telescope';
+    color: white;
+
+    z-index: 10;
+
+    animation: orbit 20s linear infinite;
+    animation-delay: 0s;
+}
+
+h2 {
+    font-size: 2em;
+
+}
+
+.ipod {
+    background-image: url('images/ipodshuffle.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    width: 300px;
+    height: 300px;
+
+    position: absolute;
+    top: -20px;
+    right: 1px;
+
+    z-index: 20;
+    display: block;
 }
 
 img {
@@ -33,7 +63,6 @@ img {
     position: absolute;
     top: 60%;
     left: 25%;
-    transform: translate(-50%, -50%);
 }
 
 #custom-cursor {
@@ -44,11 +73,73 @@ img {
     background-size: cover;
     pointer-events: none;
     transition: transform 0.1s ease-out;
+    z-index: 9999;
 }
+
+.right-button {
+    left: auto;
+    right: 200px;
+    animation: orbit 20s linear infinite;
+    animation-delay: 0s;
+}
+
+.new-button {
+    left: auto;
+    right: 560px;
+    top: 400px;
+    animation: orbit 20s linear infinite;
+    animation-delay: 0s;
+}
+
+.other-button {}
 
 h1 {
     font-size: 15em;
     font-family: 'Annie Use Your Telescope';
     color: #B00F64;
     text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+h2 {
+    color: #FFFFFF;
+    position: relative;
+    z-index: 10;
+    font-family: 'Annie Use Your Telescope';
+}
+
+p {
+    font-family: 'Annie Use Your Telescope';
+}
+
+/*p5 styling */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+/* button animation */
+@keyframes orbit {
+    from {
+        transform: translate(-30%, -50%) rotate(5deg) translateX(50px);
+    }
+
+    to {
+        transform: translate(-30%, -50%) rotate(360deg) translateX(50px);
+    }
+}
+
+@keyframes orbit2 {
+    from {
+        transform: translate(-30%, -50%) rotate(5deg) translateX(50px);
+    }
+
+    to {
+        transform: translate(-30%, -50%) rotate(360deg) translateX(50px);
+    }
 }

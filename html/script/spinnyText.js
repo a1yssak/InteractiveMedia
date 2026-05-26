@@ -29,20 +29,20 @@ function draw() {
 
     /*animation*/
     spin += map(mouseX, 0, width, -1, 1);
-    letterSize = map(mouseY, 10, height, 20, 200);
+    letterSize = map(mouseY, 5, height, 110, 140);
 
     /* circle! 
     stroke(line);
     strokeWeight(4);
     noFill();
     circle(0, 0, letterSize * 5);
-    circle(0, 0, letterSize * 25);*/
+    circle(0, 0, letterSize * 25); */
 
     /* text styling */
     fill(ink);
     stroke(255);
     strokeWeight(5);
-    text('my portfolio!', 0, -letterSize * 0.3);
+    text('my portfolio pocket', 0, -letterSize * 0.3);
 
     pop();
 }

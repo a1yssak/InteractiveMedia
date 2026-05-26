@@ -22,8 +22,7 @@ body {
 
     position: absolute;
     bottom: 30px;
-    left: 350px;
-    transform: none;
+    left: 400px;
 
     font-size: 1.5em;
     font-family: 'Annie Use Your Telescope';
@@ -31,8 +30,14 @@ body {
 
     z-index: 10;
 
-    animation: orbit 20s linear infinite;
+    animation: spin 6s linear infinite;
     animation-delay: 0s;
+}
+
+.buttons {
+    animation:
+        spin 8s linear infinite,
+        float 3s ease-in-out infinite;
 }
 
 h2 {
@@ -57,12 +62,33 @@ h2 {
     display: block;
 }
 
+/* images */
 img {
     width: 400px;
     height: 400px;
     position: absolute;
     top: 60%;
     left: 25%;
+}
+
+.pics {
+    display: flex;
+    gap: 40px;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+
+    position: relative;
+    z-index: 5;
+}
+
+.polaroid {
+    width: 200px;
+    height: 250px;
+    left: 50px;
+    transform: rotate(-5deg);
 }
 
 #custom-cursor {
@@ -76,22 +102,22 @@ img {
     z-index: 9999;
 }
 
-.right-button {
+/*.right-button {
     left: auto;
-    right: 200px;
+    right: 280px;
     animation: orbit 20s linear infinite;
     animation-delay: 0s;
 }
 
 .new-button {
     left: auto;
-    right: 560px;
-    top: 400px;
-    animation: orbit 20s linear infinite;
+    right: 550px;
+    top: 470px;
+    animation: orbit 17s linear infinite;
     animation-delay: 0s;
 }
 
-.other-button {}
+.other-button {}*/
 
 h1 {
     font-size: 15em;
@@ -122,15 +148,106 @@ canvas {
     pointer-events: none;
 }
 
+/* popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    margin: 30px;
+}
+
+/* popup images */
+.popup img {
+    width: 180px;
+    height: auto;
+    position: static;
+}
+
+/* hidden popup text */
+.popuptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: white;
+    color: #B00F64;
+
+    text-align: center;
+    padding: 12px;
+    border-radius: 15px;
+
+    position: absolute;
+    z-index: 100;
+
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: 'Annie Use Your Telescope';
+    font-size: 20px;
+}
+
+/* pop ups */
+.lipgloss {
+    position: absolute;
+    left: 20px;
+    top: 45%;
+}
+
+.phone {
+    position: absolute;
+    transform: rotate(5deg);
+    right: 40px;
+    bottom: 20px;
+}
+
+.phone:hover {
+    transform: rotate(10deg) scale(1.05);
+}
+
+.lollies {
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+}
+
+.popup img:hover,
+.polaroid:hover,
+.ipod:hover {
+    filter: drop-shadow(0 0 15px hotpink);
+    transform: scale(1.05);
+}
+
+
+.orbit {
+    position: absolute;
+
+    top: 700px;
+    left: 200px;
+
+    transform-origin: center;
+
+    animation: orbit 18s linear infinite;
+}
+
+.orbit1 {
+    animation-duration: 22s;
+
+}
+
+.orbit2 {
+    animation-duration: 16s;
+}
+
+.orbit3 {
+    animation-duration: 28s;
+}
 
 /* button animation */
 @keyframes orbit {
     from {
-        transform: translate(-30%, -50%) rotate(5deg) translateX(50px);
+        transform: rotate(0deg) translateX(180px) rotate(0deg);
     }
 
     to {
-        transform: translate(-30%, -50%) rotate(360deg) translateX(50px);
+        transform: rotate(360deg) translateX(180px) rotate(-360deg);
     }
 }
 
@@ -141,5 +258,29 @@ canvas {
 
     to {
         transform: translate(-30%, -50%) rotate(360deg) translateX(50px);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(3deg);
     }
 }

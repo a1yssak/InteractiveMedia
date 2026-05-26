@@ -1,0 +1,62 @@
+body {
+    background-image: url(images/gradient.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: none;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f6a0bd;
+    color: white;
+    cursor: pointer;
+}
+
+/* popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    margin: 30px;
+}
+
+/* popup images */
+.popup img {
+    width: 180px;
+    height: auto;
+    position: static;
+}
+
+/* hidden popup text */
+.popuptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: white;
+    color: #B00F64;
+
+    text-align: center;
+    padding: 12px;
+    border-radius: 15px;
+
+    position: absolute;
+    z-index: 100;
+
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: 'Annie Use Your Telescope';
+    font-size: 20px;
+}
+
+/* pop ups */
+.p5 {
+    position: absolute;
+    left: 300px;
+    top: 200px;
+}

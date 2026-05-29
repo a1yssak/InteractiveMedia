@@ -33,7 +33,7 @@ h2 {
     display: block;
 }
 
-#playlist-panel {
+/*#playlist-panel {
     position: fixed;
 
     top: 50%;
@@ -90,7 +90,7 @@ h2 {
     font-size: 18px;
     cursor: pointer;
     transition: transform 0.2s ease;
-}
+}*/
 
 
 /* images */

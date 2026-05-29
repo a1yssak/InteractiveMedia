@@ -5,6 +5,7 @@ var letterSize = 30;
 /*styling*/
 let ink = "#B00F64";
 let line = "#ebbbd1";
+let textColour = "#FFFFFF";
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -46,3 +47,4 @@ function draw() {
 
     pop();
 }
+

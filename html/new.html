@@ -5,31 +5,120 @@
     <meta charset="UTF-8">
     <title>home</title>
 
-    <!-- links! -->
     <link rel="stylesheet" href="style/workshop.css">
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
-    <!--<script src="html/p5/p5.min.js"></script>-->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.min.js"></script>
 </head>
 
 <body>
-    <button class="back-button" onclick="goBack()"> <-- back</button>
 
-            <!-- spinny text -->
-            <script src="html/script/spinnyText.js"></script>
+    <!-- back button -->
+    <button class="back-button" onclick="goBack()">← back</button>
 
-            <!-- p5 workshop -->
-            <div class="popup p5">
-                <img src="style/images/lipgloss.png" alt="lip gloss">
+    <!-- spinny text -->
+    <script src="html/script/spinnyText.js"></script>
 
-                <span class="popuptext">
-                    p5 workshop
-                </span>
-            </div>
+    <!-- p5 -->
+    <img src="style/images/p5.png" alt="p5 logo" class="popup-image p5" onclick="openPopup('p5Popup')">
 
-            <!--cursor-->
-            <div id="custom-cursor"></div>
-            <script src="script/script.js"></script>
+    <div class="popup-box" id="p5Popup">
+        <button class="close-btn" onclick="closePopup('p5Popup')">X</button>
+
+        <h2>p5 workshop</h2>
+        <p>learning p5.js introduced me to more examples and uses of creative coding! A part of exploration was
+            playing with the web cam canvas capabilities and creating a self portrait using p5. I mostly usedthe p5
+            examples on the website to create this,
+            with a function called Draw Eye that made the pupil of the eye move with the cursor. This code was sourced
+            from https://editor.p5js.org/edwardjmartin/sketches/XbjbWuuKG
+        </p>
+
+        <img src="style/images/portrait.png">
+    </div>
+
+    <!-- Touch -->
+    <img src="style/images/potato.png" alt="potato" class="popup-image touch" onclick="openPopup('touchPopup')">
+
+    <div class="popup-box" id="touchPopup">
+        <button class="close-btn" onclick="closePopup('touchPopup')">X</button>
+
+        <h2>TTTTOUCH!</h2>
+        <p>This workshop involved using an Arduino to hook up a speaker and wires into organic matter to produce sound.
+        </p>
+
+        <img src="style/images/IMG_5994.jpg">
+    </div>
+
+    <!-- Offline Algorithms -->
+    <img src="style/images/dice.png" alt="dice" class="popup-image dice" onclick="openPopup('dicePopup')">
+
+    <div class="popup-box" id="dicePopup">
+        <button class="close-btn" onclick="closePopup('dicePopup')">X</button>
+
+        <h2>Slave to the algorithm</h2>
+        <p><b>Every hour dice roll:</b><br>
+            1: Drink a beverage<br>
+            2: Do 10 Star Jumps<br>
+            3: Write down something you’re grateful for<br>
+            4: High five someone<br>
+            5: Do a one minute meditation<br>
+            6: Paint a nail<br><br>
+
+            <b>Results:</b><br>
+            Hour 1: Drink a beverage<br>
+            Hour 2: Do 10 star jumps<br>
+            Hour 3: Do 10 star jumps<br>
+            Hour 4: High Five someone<br>
+            Hour 5: Do a one minute meditation<br>
+            Hour 6: Do 10 star jumps<br>
+            Hour 7: Paint a nail<br>
+            Hour 8: Drink a beverage<br>
+            Hour 9: Write down something you’re grateful for<br>
+            Hour 10: Drink a Beverage<br>
+            Hour 11: Write down something you’re grateful for<br>
+            Hour 12: Paint a nail<br>
+        </p>
+        <img src="style/images/coffee.jpg">
+        <img src="style/images/high_five.jpg">
+
+    </div>
+
+    <!-- Arduino -->
+    <img src="style/images/arduino.png" alt="arduino kit" class="popup-image arduino"
+        onclick="openPopup('arduinoPopup')">
+
+    <div class="popup-box" id="arduinoPopup">
+        <button class="close-btn" onclick="closePopup('arduinoPopup')">X</button>
+
+        <h2>WOTS IN DA BOX?</h2>
+        <p>We learnt what each part of the Arduino kit did! This was very helpful and gave me a good idea of what
+            kind of projects are possible
+            with a Arduino.
+        </p>
+
+        <img src="style/images/box.jpg">
+    </div>
+
+    <!--LED -->
+    <img src="style/images/LED.png" alt="arduino LED" class="popup-image led" onclick="openPopup('ledPopup')">
+
+    <div class="popup-box" id="ledPopup">
+        <button class="close-btn" onclick="closePopup('ledPopup')">X</button>
+
+        <h2>Blink and Buzz Workshop</h2>
+        <p>initial learning workshop where I hooked up the arduino for the first time! I made the things blink and then
+            I made it buzz.
+        </p>
+
+        <img src="style/images/blink.jpg">
+        <img src="style/images/blink2.jpg">
+    </div>
+
+    <!-- cursor -->
+    <div id="custom-cursor"></div>
+
+    <script src="script/script.js"></script>
+
 </body>
 
 </html>

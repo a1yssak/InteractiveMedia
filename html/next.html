@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style/workshop.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+
+    <!-- p5 library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.min.js"></script>
+
+    <!-- scripts -->
+    <script src="script/script.js" defer></script>
+    <script src="html/script/spinnyText.js" defer></script>
+</head>
+
+<body>
+
+    <!-- back button -->
+    <button class="back-button" onclick="goBack()">← back</button>
+
+    <!-- popup: neo fruits -->
+    <img src="style/images/neo.jpeg" alt="neo" class="popup-image neo" onclick="openPopup('neoPopup')">
+
+    <div class="popup-box" id="neoPopup">
+        <button class="close-btn" onclick="closePopup('neoPopup')">X</button>
+
+        <h2>Neo fruits by Meydan Levy</h2>
+
+        <p>
+            Neo_Fruits is a design project by industrial designer Meydan Levy that explores a future where humans make
+            food artificially.
+            It proposes 3D/4D printed artificial fruits as an alternative to natural food.
+            These are made using cellulose and enriched with vitamins and minerals after printing.
+
+            source: https://designawards.core77.com/speculative-design/84449/Neo-Fruit
+        </p>
+    </div>
+
+    <!-- popup: stephen bell -->
+    <img src="style/images/stephen.jpg" alt="stephen" class="popup-image stephen" onclick="openPopup('stephenPopup')">
+
+    <div class="popup-box" id="stephenPopup">
+        <button class="close-btn" onclick="closePopup('stephenPopup')">X</button>
+
+        <h2>Stephen Bell – RANSTAK drawing</h2>
+
+        <p>
+            Created while studying at the Experimental & Electronic Art department.
+            The work connects randomly generated points to create unpredictable shapes.
+            Brush pens were used to add variation and a handmade feel.
+
+            source: https://stephenbell.org.uk/index.html
+        </p>
+    </div>
+
+    <!-- popup: hiroshi kawano -->
+    <img src="style/images/hiroshi.jpg" alt="hiroshi" class="popup-image hiroshi" onclick="openPopup('hiroshiPopup')">
+
+    <div class="popup-box" id="hiroshiPopup">
+        <button class="close-btn" onclick="closePopup('hiroshiPopup')">X</button>
+
+        <h2>Artificial Mondrian – Hiroshi Kawano</h2>
+
+        <p>
+            Rendered in gouache on paper. The model was coded in Fortran using a HITACHI 5020 in Tokyo.
+            This work combines painting with early computer-generated systems.
+
+            source:
+            https://www.overheadcompartment.org/the-work-of-art-in-the-age-of-programmatic-abstraction/
+        </p>
+    </div>
+
+    <!-- popup: harold cohen -->
+    <img src="style/images/harold.jpg" alt="harold" class="popup-image harold" onclick="openPopup('haroldPopup')">
+
+    <div class="popup-box" id="haroldPopup">
+        <button class="close-btn" onclick="closePopup('haroldPopup')">X</button>
+
+        <h2>Harold Cohen – AARON</h2>
+
+        <p>
+            Harold Cohen created AARON in the 1960s, one of the first AI art programs.
+            It generates drawings using coded instructions and was developed as a creative system.
+
+            source: https://whitney.org/exhibitions/harold-cohen-aaron
+        </p>
+    </div>
+
+    <!-- popup: experimentelle ästhetik -->
+    <img src="style/images/electronic.jpg" alt="electronic" class="popup-image electronic"
+        onclick="openPopup('electronicPopup')">
+
+    <div class="popup-box" id="electronicPopup">
+        <button class="close-btn" onclick="closePopup('electronicPopup')">X</button>
+
+        <h2>Experimentelle Ästhetik – Herbert W. Franke</h2>
+
+        <p>
+            Early computer-generated art made when computers were large research machines.
+            This exhibition helped establish generative and computational art practices.
+
+            source:
+            https://zine.zora.co/issue/intergenerational-dynamics/herbert-w-franke
+        </p>
+    </div>
+
+    <!-- custom cursor -->
+    <div id="custom-cursor"></div>
+
+</body>
+
+</html>

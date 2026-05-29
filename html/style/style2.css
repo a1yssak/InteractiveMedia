@@ -84,3 +84,16 @@ body {
     pointer-events: none;
     transition: transform 0.1s ease-out;
 }
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f6a0bd;
+    color: white;
+    cursor: pointer;
+}

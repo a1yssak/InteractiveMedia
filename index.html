@@ -23,22 +23,38 @@
     <!--<h1>my portfolio!</h1>-->
 
     <!-- star links -->
-    <div class="orbit orbit1">
+    <div class="orbit star1">
         <a href="html/more.html" class="buttons">weeks 1 - 4</a>
     </div>
 
-    <div class="orbit orbit2">
+    <div class="orbit star2">
         <a href="html/next.html" class="buttons">research</a>
     </div>
 
-    <div class="orbit orbit3">
+    <div class="orbit star3">
         <a href="html/new.html" class="buttons">workshops</a>
+    </div>
+
+    <div class="orbit star4">
+        <a href="html/development.html" class="buttons">experimentation</a>
     </div>
 
     <!-- other items -->
 
-    <div class="ipod">
-        <a href="html/music.html"></a>
+    <div class="ipod" onclick="openPlaylist()"></div>
+
+    <div id="playlist-panel">
+        <h2>my playlist:</h2>
+
+        <ul>
+            <li>Last Train to London - Electric Light Orchestra</li>
+            <li>Sutphin Boulevard - Blood Orange</li>
+            <li>Bodysnatchers — Radiohead</li>
+            <li>Something about us - Daftpunk</li>
+            <li>Post - Beabadoobee</li>
+        </ul>
+
+        <button class="playlist-close" onclick="closePlaylist()">✕</button>
     </div>
 
     <div class="popup lipgloss">
@@ -74,6 +90,8 @@
 
     <!--*old* script file for cursor-->
     <script src="html/script/script.js"></script>
+
+    <!--<script src="html/script/playlist.js"></script> -->
 
 
 </body>

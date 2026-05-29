@@ -1,7 +1,7 @@
 /* GENERAL STYLING */
 body {
     cursor: none;
-    background-image: url(images/research_background.gif);
+    background-image: url("images/gradient.png");
     background-size: cover;
     background-position: center;
 }
